@@ -8,7 +8,7 @@ public class Colecao {
 	
 	public Colecao(int tam) throws RuntimeException{
 		if(tam < 0)
-			throw new RuntimeException("Tamanho inválido: "+tam);
+			throw new RuntimeException("Tamanho inv√°lido: "+tam);
 		this.elementos = new String[tam];
 		this.fim = 0;
 	}
@@ -28,7 +28,7 @@ public class Colecao {
 	
 	public String getElementoAt(int pos){
 		if(pos < 0 || pos > elementos.length)
-			throw new RuntimeException("Posição inválida:"+pos);
+			throw new RuntimeException("Posi√ß√£o inv√°lida:"+pos);
 		return elementos[pos];
 	}
 	
