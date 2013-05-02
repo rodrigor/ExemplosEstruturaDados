@@ -3,6 +3,8 @@ package com.rodrigor.ed1.minis.m1;
 public class Miniteste {
 
 	public static void main(String[] args) {
+		
+
 		Colecao c = new Colecao(10);
 		
 		for(int i = 1; i <= 35; i++){

@@ -3,20 +3,20 @@ package com.rodrigor.ed1.minis.m1;
 public class Colecao {
 	
 	private String[] elementos;
-	private int fim;
+	private int quant;
 	private static final int INCREMENTO = 10;
 	
-	public Colecao(int tam) throws RuntimeException{
+	public Colecao(int tam) throws ColecaoRuntimeException{
 		if(tam < 0)
-			throw new RuntimeException("Tamanho inválido: "+tam);
+			throw new ColecaoRuntimeException("Tamanho inválido: "+tam);
 		this.elementos = new String[tam];
-		this.fim = 0;
+		this.quant = 0;
 	}
 	
 	public void add(String e){
-		if(fim == elementos.length)
+		if(quant == elementos.length)
 			redimensionarArray();
-		elementos[fim++] = e;
+		elementos[quant++] = e;
 	}
 	
 	private void redimensionarArray(){
@@ -33,7 +33,7 @@ public class Colecao {
 	}
 	
 	public int getSize(){
-		return fim;
+		return quant;
 	}
 
 }
