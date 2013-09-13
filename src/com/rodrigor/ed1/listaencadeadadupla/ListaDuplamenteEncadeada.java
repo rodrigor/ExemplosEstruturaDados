@@ -1,5 +1,7 @@
 package com.rodrigor.ed1.listaencadeadadupla;
 
+import com.rodrigor.ed1.iterator.Iterador;
+
 public class ListaDuplamenteEncadeada {
 
 	private NoDuplo cabeca;
@@ -38,6 +40,10 @@ public class ListaDuplamenteEncadeada {
 		}
 		str.append("]");
 		return str.toString();
+	}
+	
+	public Iterador iterador(){
+		return new IteradorListaDuplamenteEncadeada(cabeca);
 	}
 
 }
